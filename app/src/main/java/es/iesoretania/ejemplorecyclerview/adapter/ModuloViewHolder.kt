@@ -11,7 +11,7 @@ import es.iesoretania.ejemplorecyclerview.datos.ModuloDatos
 
 class ModuloViewHolder(view: View) : RecyclerView.ViewHolder(view){
 
-    val binding = ItemModuloBinding.bind(view)
+    private val binding = ItemModuloBinding.bind(view)
 
     fun render(modulo: Modulo){
         binding.textViewNombre.text = modulo.nombre
