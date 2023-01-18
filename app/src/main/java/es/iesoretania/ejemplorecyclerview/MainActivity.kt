@@ -20,6 +20,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun initRecyclerView() {
         binding.recyclerViewid.layoutManager = LinearLayoutManager(this)
-        binding.recyclerViewid.adapter =ModuloAdapter(ModuloDatos.ListaModulos)
+        binding.recyclerViewid.adapter = ModuloAdapter(ModuloDatos.ListaModulos)
     }
 }

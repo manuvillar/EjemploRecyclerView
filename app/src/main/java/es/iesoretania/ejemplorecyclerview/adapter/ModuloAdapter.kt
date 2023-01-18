@@ -9,7 +9,7 @@ import es.iesoretania.ejemplorecyclerview.datos.Modulo
 class ModuloAdapter(val modulosLista: List<Modulo>) : RecyclerView.Adapter<ModuloViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ModuloViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        return ModuloViewHolder(layoutInflater.inflate(R.layout.item_modulo,parent))
+        return ModuloViewHolder(layoutInflater.inflate(R.layout.item_modulo,parent,false))
     }
 
     override fun onBindViewHolder(holder: ModuloViewHolder, position: Int) {
