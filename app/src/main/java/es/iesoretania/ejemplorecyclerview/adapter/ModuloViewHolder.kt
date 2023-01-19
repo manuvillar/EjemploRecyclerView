@@ -2,6 +2,7 @@ package es.iesoretania.ejemplorecyclerview.adapter
 
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import es.iesoretania.ejemplorecyclerview.R
@@ -18,5 +19,12 @@ class ModuloViewHolder(view: View) : RecyclerView.ViewHolder(view){
         binding.textViewCurso.text = modulo.curso
         binding.textViewCiclo.text = modulo.ciclo
         Glide.with(binding.imageViewModulo.context).load(modulo.urlImagen).into(binding.imageViewModulo)
+
+        binding.imageViewModulo.setOnClickListener {
+            Toast.makeText(binding.imageViewModulo.context, modulo.nombre, Toast.LENGTH_SHORT).show()
+        }
+        itemView.setOnClickListener {
+            Toast.makeText(binding.imageViewModulo.context, modulo.ciclo, Toast.LENGTH_SHORT).show()
+        }
     }
 }
