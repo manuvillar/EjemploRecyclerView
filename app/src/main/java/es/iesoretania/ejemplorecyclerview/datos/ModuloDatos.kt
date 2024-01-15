@@ -16,7 +16,7 @@ class ModuloDatos {
             Modulo("ACDAT",
                 "2º",
                 "DAM",
-                "https://www.purpledreams.es/wp-content/uploads/2022/04/GRAPHIC-DESIGN-1.png"
+                "https://blogs.iadb.org/conocimiento-abierto/wp-content/uploads/sites/10/2019/03/banner-data-trust-fideicomiso-datos.png"
             ),
             Modulo("DAWEB",
                 "2º",
